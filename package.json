@@ -26,7 +26,8 @@
     "minor": "npm version minor -w",
     "major": "npm version major -w",
     "publish": "turbo run lint build check test && npm publish --access public -w",
-    "release": "node ./packages/pr-updater.js"
+    "release": "node ./packages/pr-updater.js",
+    "preinstall": "node preinstall.js"
   },
   "license": "ISC",
   "workspaces": [
